@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main(void) {
+	
+    srand(time(NULL));
+    int numAleatorio = rand() % 10 + 1;
+    int resp;
+    printf("%d", numAleatorio);
+
+	do{
+        printf("\nAdivinhe o numero correto(de 1 a 10): ");
+        scanf("%d", &resp);
+	}while(resp != numAleatorio);
+        printf("\nParabens!!");
+    return 0;
+}
