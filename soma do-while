@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+	
+	int num = 0;
+	int soma = 0;
+	
+	do{
+		
+		printf("\ndigite numeros para somar, caso digite 0 o programa fechara");
+		scanf("%d", &num);
+		soma += num;
+		printf("\n%d\n", soma);
+	}while(num != 0);
+	return 0;
+}
