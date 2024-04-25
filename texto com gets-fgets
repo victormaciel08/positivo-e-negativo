@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+#define N 100
+int main(void) {
+		setlocale(LC_ALL, "Portuguese");
+	
+	char s[N];
+	
+	printf("Digite um texto: ");
+	gets (s);
+	printf("\nTexto: ");
+	printf(s);
+//	fgets(s, N, stdin);
+//	printf("\nTexto: fgets");
+//  printf(s);
+	
+	
+}
