@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+#include <string.h>
+
+#define N 100
+int main(void) {
+		setlocale(LC_ALL, "Portuguese");
+	
+	char nome[N] = ("Victor");
+	char sobrenome[N] = ("Praca");
+	
+	printf("\nAntes do strcat");
+	printf("\nNOME: %s", nome);
+	printf("\nSOBRENOME: %s", sobrenome);
+	
+	strcat (nome, sobrenome);
+	
+	printf("\n\nDepois do strcat\n");
+	printf(nome);
+	return 0;
+}
