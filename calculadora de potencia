@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main(void) {
+	
+	int base;
+	int exp;
+	int i;
+	long long int resultado = 1;
+	
+	printf("Digite a base da potencia: ");
+	scanf("%d", &base);
+	printf("Digite o expoente da potencia: ");
+	scanf("%d", &exp);
+	
+	for(i=0;i<exp;i++){
+		resultado *= base;
+	}
+	printf("a potencia e: %lld", resultado);	
+	return 0;
+}
