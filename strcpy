@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+#include <string.h>
+
+#define N 100
+int main(void) {
+		setlocale(LC_ALL, "Portuguese");
+	
+	char origem[N] = ("Olá mundo!");
+	char destino[N];
+	
+//	puts("Antes do strcpy\n");
+//	puts(origem);
+//	puts(destino);
+	
+	strcpy(destino, origem);
+	
+	puts("Depois do strcpy");
+	puts(origem);
+	puts(destino);
+
+	return 0;
+}
