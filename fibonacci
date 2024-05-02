@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main(void) {
+	
+	int N=0;
+	int i;
+	int num;
+	int termo1=0;
+	int termo2=1;
+	
+	printf("digite uma posicao para saber o termo na sequencia de fibonacci: ");
+	scanf("%d", &N);
+	
+	for(i=3; i<=N; i++){
+		num = termo1 + termo2;
+		termo1=termo2;
+		termo1=num;
+		printf("\no termo %d e: %d", N, num);
+	}
+	
+	
+	
+	
+	return 0;
+}
