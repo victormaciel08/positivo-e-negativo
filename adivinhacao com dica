@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main(void) {
+	
+    srand(time(NULL));
+    int numAleatorio = rand() % 88 + 1;
+    int resp;
+
+	printf("Tente acertar o numero de 1 a 88: ");
+	
+	do{
+	scanf("%d", &resp);
+	if(resp>numAleatorio){
+		printf("\nO numero e menor ");
+	}
+	else if(resp<numAleatorio){
+		printf("\nO numero e maior ");
+	}
+	else{
+		printf("\nParabens, voce acertou!!");
+	}
+
+
+
+
+	}while(resp!=numAleatorio);
+    return 0;
+}
