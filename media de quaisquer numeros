@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+int main(void) {
+	
+		float notas;
+		float media;
+		float soma;
+		int i=0;
+			
+		puts("digite quantos Numeros quiser para fazer uma media, digite 0 para dar o resultado");
+		
+		do{
+		
+		scanf("%f", &num);	
+		soma+=num;
+		i++;
+		}while(num!=0);
+		i--;
+		media=soma/i;
+		printf(" a média dessas notas é: %.2f", media);
+
+		return 0;
+	}
