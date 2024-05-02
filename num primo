@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main(void) {
+	
+	int num;
+	int i;
+	int divisor = 0;
+	
+	printf("digite um numero para saber se e primo:");
+	scanf("%d", &num);
+	
+	for(i=1; i<=num; i++){
+		if(num % i==0){
+			divisor++;
+		}
+	}
+	if(divisor == 2){
+		printf("Numero Primo");
+	}
+	else{
+		printf("Numero Nao Primo");
+	}
+	return 0;
+}
