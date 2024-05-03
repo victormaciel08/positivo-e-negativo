@@ -1,0 +1,52 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main(void) {
+	
+	int tab1 [2] [2];
+	int tab2 [2] [2];
+	int i,j; //i = linha, j = coluna
+	
+	printf("Crie uma tabela\n");
+	
+	for(i = 0; i < 2; i++){
+		for(j = 0; j < 2; j++){
+			printf("Digite o numero da linha %d e da coluna %d da tabela 1: ", i + 1, j + 1);
+			scanf("%d", &tab1[i][j]);
+		}
+	}
+	printf("\n");
+	for(i = 0; i < 2; i++){
+		for(j = 0; j < 2; j++){
+			printf("Digite o numero da linha %d e da coluna %d da tabela 2: ", i + 1, j + 1);
+			scanf("%d", &tab2[i][j]);
+		}
+	}
+	printf("\nTabela 1\n");
+	for(i = 0; i < 2; i++){
+		for(j = 0; j < 2; j++){
+			printf("|");
+			printf(" %d |", tab1[i][j]);
+}
+	printf("\n");
+}
+	printf("\nTabela 2\n");
+	for(i = 0; i < 2; i++){
+		for(j = 0; j < 2; j++){
+			printf("|");
+			printf(" %d |", tab2[i][j]);
+}
+	printf("\n");
+}
+	printf("\nA Soma das tabelas e:\n");
+	for(i = 0; i < 2; i++){
+		for(j = 0; j < 2; j++){
+			printf("|");
+			printf(" %d |", tab1[i][j] + tab2[i][j]);
+}
+	printf("\n");
+}
+		
+	return 0;
+}
