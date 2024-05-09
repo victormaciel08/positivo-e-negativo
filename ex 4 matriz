@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main(void) {
+	
+	int tab1 [3] [3];
+	int tabResult [3] [3];
+	int i,j; //i = linha, j = coluna
+	
+	printf("Multiplicacao da tabela\n");
+	
+	for(i = 0; i < 3; i++){
+		for(j = 0; j < 3; j++){
+			printf("Digite o numero da linha %d e da coluna %d da tabela 1: ", i + 1, j + 1);
+			scanf("%d", &tab1[i][j]);
+		}
+	}
+	printf("\nTabela 1\n");
+	for(i = 0; i < 3; i++){
+		for(j = 0; j < 3; j++){
+			printf("|");
+			printf(" %d |", tab1[i][j]);
+		}
+		printf("\n");
+	}
+	printf("\nTabela Multiplicada\n");
+	for(i = 0; i < 3; i++){
+		for(j = 0; j < 3; j++){
+			printf("|");
+			printf(" %d |", tab1[i][j] * 3);
+		}
+		printf("\n");
+	}
+	return 0;
+}
