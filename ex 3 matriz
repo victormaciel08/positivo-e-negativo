@@ -5,7 +5,7 @@
 int main(void) {
 	
 	int tab1 [4] [4];
-	int tabResult [2] [2];
+	int soma;
 	int i,j; //i = linha, j = coluna
 	
 	printf("Soma das Linhas e das Colunas\n");
@@ -25,7 +25,22 @@ int main(void) {
 		printf("\n");
 	}
 	
-
+	printf("\nSoma das Linhas\n");
+	for(i = 0; i < 4; i++){
+		for(j = 0; j < 4; j++){
+		soma += tab1 [i][j];	
+	}
+		printf("%d\n", soma);
+		soma = 0;
+	}
+	printf("\nSoma das Colunas\n");
+	for(i = 0; i < 4; i++){
+		for(j = 0; j < 4; j++){
+		soma += tab1 [j][i];	
+	}
+		printf("%d\n", soma);
+		soma = 0;
+	}
 		
 	return 0;
 }
