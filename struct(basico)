@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+struct Ponto {
+	int x;
+	int y;
+};
+int main(void) {
+	
+	struct Ponto ponto1;
+	
+	ponto1.x = 10;
+	ponto1.y = 20;
+
+	printf("Coordenadas: %d, %d", ponto1.x, ponto1.y);
+	
+  return 0;
+}
